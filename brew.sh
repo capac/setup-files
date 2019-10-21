@@ -16,10 +16,12 @@ brew install gpg2
 brew install rlwrap
 brew install fish
 brew install mkvtoolnix
+brew install emacs --with-cocoa
 
 # install macOS packages
 
 brew cask install 1password
+brew cask install basictex
 brew cask install acorn
 brew cask install cocktail
 brew cask install daisydisk
