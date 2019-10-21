@@ -19,12 +19,20 @@ brew install mkvtoolnix
 
 # install macOS packages
 
-brew cask install firefox
-brew cask install sourcetree
-brew cask install vlc
-brew cask install skype
-brew cask install postbox
+brew cask install 1password
+brew cask install acorn
+brew cask install cocktail
+brew cask install daisydisk
 brew cask install dash
 brew cask install iterm2
+brew cask install firefox
+brew cask install omnifocus
+brew cask install postbox
+brew cask install skim
+brew cask install skype
+brew cask install slack
+brew cask install sourcetree
+brew cask install textmate
 brew cask install viscosity
 brew cask install visual-studio-code
+brew cask install vlc
