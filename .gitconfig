@@ -1,0 +1,46 @@
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[user]
+    name = capac
+    email = capac@users.noreply.github.com
+[push]
+    default = simple
+[core]
+    editor = mate
+    excludesfile = /Users/angelo/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Programming/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+    template = /Users/angelo/.stCommitMsg
+[credential]
+    helper = osxkeychain
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = True
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[alias]
+    br = branch
+    ci = commit
+    cm = commit -m
+    co = checkout
+    ls = log --stat
+    la = log --graph --all
+    lp = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
+    rf = reflog
+    rs = reflog --stat
+    sb = status -sb
+    st = status
+    sv = status -v
