@@ -33,3 +33,7 @@ curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/ipytho
 mkdir -p ${homedir}/Library/Preferences
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/iterm2/com.googlecode.iterm2.plist" > ${homedir}/Library/Preferences/com.googlecode.iterm2.plist
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/iterm2/MyMonokaiPro-FilterMachine.itermcolors" > ${homedir}/MyMonokaiPro-FilterMachine.itermcolors
+
+# download VSCode config files
+mkdir -p ${homedir}/Library/Application\ Support/Code/User/
+curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/visual-studio-code/settings.json" > ${homedir}/Library/Application\ Support/Code/User/settings.json
