@@ -33,13 +33,19 @@
     untracked = red
 [alias]
     br = branch
+    cane = commit --amend --no-edit
     ci = commit
     cm = commit -m
     co = checkout
-    ls = log --stat
+    d = diff
+    last = log -1 HEAD
     la = log --graph --all
+    lo = log --oneline -n 10
     lp = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ls = log --stat
+    pr = pull --rebase
     rf = reflog
+    rh = reset --hard
     rs = reflog --stat
     sb = status -sb
     st = status
