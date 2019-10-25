@@ -20,3 +20,10 @@ curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/f
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/functions/la.fish" > ${homedir}/.conda/fish/functions/la.fish
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/functions/ls.fish" > ${homedir}/.conda/fish/functions/ls.fish
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/functions/pdf.fish" > ${homedir}/.conda/fish/functions/pdf.fish
+
+# download IPython config files
+curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/ipython/ipython_config.py" > ${homedir}/.ipython/profile_default/ipython_config.py
+curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/ipython/ipython_kernel_config.py" > ${homedir}/.ipython/profile_default/ipython_kernel_config.py
+
+# run the Homebrew Script
+./brew.sh
