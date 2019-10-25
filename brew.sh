@@ -100,4 +100,4 @@ brew cask install --appdir="/Applications/Security" wifi-explorer
 brew cask install --appdir="/Applications/Sports" rubitrack-pro
 
 # install macOS packages in Applications/Utilities folder
-brew cask install --appdir="/Applications/Utilities" xquartz
+# brew cask install --appdir="/Applications/Utilities" xquartz
