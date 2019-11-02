@@ -80,11 +80,11 @@ brew cask install --appdir="/Applications/Office" omnifocus
 brew cask install --appdir="/Applications/Office" skim
 
 # install macOS packages in Applications/Programming folder
+brew cask install --appdir="/Applications/Programming" atom
 brew cask install --appdir="/Applications/Programming" brackets
 brew cask install --appdir="/Applications/Programming" dash
 brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
-brew cask install --appdir="/Applications/Programming" pycharm
 brew cask install --appdir="/Applications/Programming" sourcetree
 brew cask install --appdir="/Applications/Programming" textmate
 brew cask install --appdir="/Applications/Programming" visual-studio-code
