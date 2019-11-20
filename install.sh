@@ -7,6 +7,12 @@ fi
 
 homedir="/Users/angelo"
 
+# install Xcode CLI tools
+sudo xcode-select --install
+
+# install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # run the Homebrew Script
 ./brew.sh
 
