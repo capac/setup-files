@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-mkdir -p Applications/{Computation, Intel Power Gadget, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security, Sports}
-
 # install Brew packages
 brew cask install basictex
 brew install emacs --with-cocoa
