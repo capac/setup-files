@@ -13,6 +13,9 @@ sudo xcode-select --install
 # install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# create Application subfolders
+mkdir -p Applications/{Computation, Intel Power Gadget, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security, Sports}
+
 # download the latest Miniconda distribution
 curl "https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh" > ${homedir}
 
