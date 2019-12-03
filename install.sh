@@ -2,7 +2,7 @@
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: install.sh <home_directory>"
-    echo "'sudo' is required for write premissions"
+    echo "'sudo' is required for write permission"
     exit 1
 fi
 
@@ -30,7 +30,7 @@ sudo conda list --explicit > installed-conda-packages.txt
 rm installed-conda-packages.txt
 echo
 
-echo "Running the Homebrew Script..."
+echo "Running the Homebrew script..."
 ./brew.sh
 
 echo "Downloading the .gitconfig file..."
