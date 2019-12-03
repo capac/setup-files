@@ -25,6 +25,9 @@ curl "https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh" > 
 echo
 echo "Installing the latest Miniconda distribution for macOS..."
 bash Miniconda3-latest-MacOSX-x86_64.sh -b -f -t -p /Applications/Computation/miniconda3
+curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/conda/installed-conda-packages.txt" > ${homedir}/installed-conda-packages.txt
+sudo conda list --explicit > installed-conda-packages.txt
+rm installed-conda-packages.txt
 echo
 
 echo "Running the Homebrew Script..."
