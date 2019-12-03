@@ -17,7 +17,7 @@ echo "Installing Homebrew..."
 echo
 
 echo "Creating the Applications subfolders..."
-mkdir -p Applications/{Computation, Intel Power Gadget, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security, Sports}
+mkdir -p -m 755 Applications/{Computation, Intel Power Gadget, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security, Sports}
 echo
 
 echo "Downloading the latest Miniconda distribution for macOS..."
@@ -35,9 +35,10 @@ echo "Running the Homebrew Script..."
 
 echo "Downloading the .gitconfig file..."
 curl "https://raw.githubusercontent.com/capac/setup-files/master/.gitconfig" > ${homedir}/.gitconfig
+echo
 
 echo "Downloading the fish shell config files..."
-mkdir -p ${homedir}/.conda/fish/functions
+mkdir -p -m 755 ${homedir}/.conda/fish/functions
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/config.fish" > ${homedir}/.conda/fish/config.fish
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/fish_variables" > ${homedir}/.conda/fish/fish_variables
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/functions/cdf.fish" > ${homedir}/.conda/fish/functions/cdf.fish
@@ -49,19 +50,19 @@ curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/fish/f
 echo
 
 echo "Downloading the IPython config files..."
-mkdir -p ${homedir}/.ipython/profile_default/
+mkdir -p -m 755 ${homedir}/.ipython/profile_default/
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/ipython/ipython_config.py" > ${homedir}/.ipython/profile_default/ipython_config.py
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/ipython/ipython_kernel_config.py" > ${homedir}/.ipython/profile_default/ipython_kernel_config.py
 echo
 
 echo "Dowmloading the iTerm2 preference and color-template files..."
-mkdir -p ${homedir}/Library/Preferences
+mkdir -p -m 700 ${homedir}/Library/Preferences
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/iterm2/com.googlecode.iterm2.plist" > ${homedir}/Library/Preferences/com.googlecode.iterm2.plist
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/iterm2/MyMonokaiPro-FilterMachine.itermcolors" > ${homedir}/MyMonokaiPro-FilterMachine.itermcolors
 echo
 
 echo "Downloading the VSCode config files..."
-mkdir -p ${homedir}/Library/Application\ Support/Code/User/
+mkdir -p -m 755 ${homedir}/Library/Application\ Support/Code/User/
 curl "https://raw.githubusercontent.com/capac/setup-files/master/settings/visual-studio-code/settings.json" > ${homedir}/Library/Application\ Support/Code/User/settings.json
 echo
 echo "Done!"
