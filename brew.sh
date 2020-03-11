@@ -10,10 +10,10 @@ brew install ghostscript
 brew install git
 brew install gpg2
 brew install htop
+brew install imagemagick
 brew install mkvtoolnix
 brew install nmap
 brew install pandoc
-brew install rlwrap
 brew install tmux
 brew install tree
 brew install watch
