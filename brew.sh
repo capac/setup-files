@@ -86,6 +86,7 @@ brew cask install --appdir="/Applications/Office" devonagent
 brew cask install --appdir="/Applications/Office" devonthink
 brew cask install --appdir="/Applications/Office" omnifocus
 brew cask install --appdir="/Applications/Office" skim
+brew cask install --appdir="/Applications/Office" vmware-fusion
 echo
 
 echo "Installing brew cask packages in the Applications/Programming folder..."
