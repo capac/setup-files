@@ -49,7 +49,6 @@ echo "Installing brew cask packages in the Applications/Internet folder..."
 brew cask install --appdir="/Applications/Internet" brave-browser
 brew cask install --appdir="/Applications/Internet" firefox
 brew cask install --appdir="/Applications/Internet" forklift
-brew cask install --appdir="/Applications/Internet" opera
 brew cask install --appdir="/Applications/Internet" qbittorrent
 brew cask install --appdir="/Applications/Internet" postbox
 brew cask install --appdir="/Applications/Internet" skype
