@@ -26,6 +26,7 @@ brew cask install --appdir="/Applications" backblaze
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" fantastical
 brew cask install --appdir="/Applications" little-snitch
+brew cask install --appdir="/Applications" logitech-options
 brew cask install --appdir="/Applications" macupdater
 brew cask install --appdir="/Applications" malwarebytes
 brew cask install --appdir="/Applications" nextcloud
