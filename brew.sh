@@ -106,6 +106,7 @@ brew cask install --appdir="/Applications/Security" micro-snitch
 brew cask install --appdir="/Applications/Security" tor-browser
 brew cask install --appdir="/Applications/Security" viscosity
 brew cask install --appdir="/Applications/Security" wifi-explorer
+brew cask install --appdir="/Applications/Security" wire
 echo
 
 echo "Installing brew cask packages in the Applications/Sports folder..."
