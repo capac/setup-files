@@ -111,7 +111,5 @@ echo "Installing brew cask packages in the Applications/Sports folder..."
 brew cask install --appdir="/Applications/Sports" suunto-moveslink2
 brew cask install --appdir="/Applications/Sports" rubitrack-pro
 echo
-# install brew cask packages in Applications/Utilities folder
-# brew cask install --appdir="/Applications/Utilities" xquartz
 echo "Done with brew.sh!"
 echo
