@@ -29,6 +29,7 @@ brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" logitech-options
 brew cask install --appdir="/Applications" macupdater
 brew cask install --appdir="/Applications" malwarebytes
+brew cask install --appdir="/Applications" microsoft-office-2016
 brew cask install --appdir="/Applications" nextcloud
 brew cask install --appdir="/Applications" ntfs-mac
 brew cask install --appdir="/Applications" postgres
