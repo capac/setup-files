@@ -2,11 +2,12 @@
 
 if [ "$#" -ne 1 ]; then
     echo "Usage: install.sh <home_directory>"
-    echo "'sudo' is required for write permission"
+    echo "'sudo' is required for writing permission,"
+    echo "enter admin password when prompted."
     exit 1
 fi
 
-homedir="/Users/angelo"
+homedir=$HOME
 
 echo "Installing the Xcode CLI tools..."
 sudo xcode-select --install
