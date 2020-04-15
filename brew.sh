@@ -2,6 +2,7 @@
 
 echo "Installing brew packages..."
 brew cask install basictex
+brew cask install gfortran
 brew install emacs --with-cocoa
 brew install exiftool
 brew install fish
@@ -47,7 +48,6 @@ brew cask install --appdir="/Applications/Intel Power Gadget" intel-power-gadget
 echo
 
 echo "Installing brew cask packages in the Applications/Internet folder..."
-brew cask install --appdir="/Applications/Internet" brave-browser
 brew cask install --appdir="/Applications/Internet" firefox
 brew cask install --appdir="/Applications/Internet" forklift
 brew cask install --appdir="/Applications/Internet" qbittorrent
@@ -96,6 +96,7 @@ brew cask install --appdir="/Applications/Programming" dash
 brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" postman
+brew cask install --appdir="/Applications/Programming" pycharm
 brew cask install --appdir="/Applications/Programming" sourcetree
 brew cask install --appdir="/Applications/Programming" textmate
 brew cask install --appdir="/Applications/Programming" visual-studio-code
