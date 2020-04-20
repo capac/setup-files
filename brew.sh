@@ -97,6 +97,7 @@ brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" postman
 brew cask install --appdir="/Applications/Programming" pycharm
+# brew cask install --appdir="/Applications/Programming" qgis
 brew cask install --appdir="/Applications/Programming" sourcetree
 brew cask install --appdir="/Applications/Programming" textmate
 brew cask install --appdir="/Applications/Programming" visual-studio-code
