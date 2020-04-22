@@ -2,6 +2,7 @@
 
 echo "Installing brew packages..."
 brew cask install basictex
+brew cask install miniconda
 brew cask install gfortran
 brew install emacs --with-cocoa
 brew install exiftool
@@ -96,7 +97,7 @@ brew cask install --appdir="/Applications/Programming" dash
 brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" postman
-brew cask install --appdir="/Applications/Programming" pycharm
+brew cask install --appdir="/Applications/Programming" pycharm-ce-with-anaconda-plugin
 # brew cask install --appdir="/Applications/Programming" qgis
 brew cask install --appdir="/Applications/Programming" sourcetree
 brew cask install --appdir="/Applications/Programming" textmate
