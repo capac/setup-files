@@ -4,13 +4,14 @@ echo "Installing brew packages..."
 brew cask install basictex
 brew cask install miniconda
 brew cask install gfortran
+brew install coreutils
 brew install emacs --with-cocoa
 brew install exiftool
 brew install fish
 brew install geoip
 brew install ghostscript
 brew install git
-brew install gpg2
+brew install gnupg
 brew install htop
 brew install imagemagick
 brew install mkvtoolnix
