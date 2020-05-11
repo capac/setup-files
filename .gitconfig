@@ -50,3 +50,4 @@
     sb = status -sb
     st = status
     sv = status -v
+    sh = status -s
