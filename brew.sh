@@ -59,6 +59,7 @@ brew cask install --appdir="/Applications/Internet" slack
 brew cask install --appdir="/Applications/Internet" spamsieve
 brew cask install --appdir="/Applications/Internet" thunderbird
 brew cask install --appdir="/Applications/Internet" tunnelbear
+brew cask install --appdir="/Applications/Internet" zoomus
 echo
 
 echo "Installing brew cask packages in the Applications/Maintenance folder..."
