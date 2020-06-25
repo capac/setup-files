@@ -37,6 +37,7 @@ brew cask install --appdir="/Applications" nextcloud
 brew cask install --appdir="/Applications" ntfs-mac
 brew cask install --appdir="/Applications" postgres
 brew cask install --appdir="/Applications" psequel
+brew cask install --appdir="/Applications" tableau-public
 brew cask install --appdir="/Applications" the-unarchiver
 echo
 
@@ -78,6 +79,7 @@ echo "Installing brew cask packages in the Applications/Multimedia..."
 brew cask install --appdir="/Applications/Multimedia/Graphics" acorn
 brew cask install --appdir="/Applications/Multimedia/Graphics" xee
 brew cask install --appdir="/Applications/Multimedia" handbrake
+brew cask install --appdir="/Applications/Multimedia" movist-pro
 brew cask install --appdir="/Applications/Multimedia" vlc
 brew cask install --appdir="/Applications/Multimedia" xld
 echo
@@ -98,6 +100,7 @@ brew cask install --appdir="/Applications/Programming" brackets
 brew cask install --appdir="/Applications/Programming" dash
 brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
+brew cask install --appdir="/Applications/Programming" pluralsight
 brew cask install --appdir="/Applications/Programming" postman
 brew cask install --appdir="/Applications/Programming" pycharm-ce-with-anaconda-plugin
 # brew cask install --appdir="/Applications/Programming" qgis
