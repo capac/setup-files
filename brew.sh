@@ -80,6 +80,7 @@ brew cask install --appdir="/Applications/Multimedia/Graphics" acorn
 brew cask install --appdir="/Applications/Multimedia/Graphics" xee
 brew cask install --appdir="/Applications/Multimedia" handbrake
 brew cask install --appdir="/Applications/Multimedia" movist-pro
+brew cask install --appdir="/Applications/Multimedia" pocket-casts
 brew cask install --appdir="/Applications/Multimedia" vlc
 brew cask install --appdir="/Applications/Multimedia" xld
 echo
