@@ -38,6 +38,7 @@ brew cask install --appdir="/Applications" ntfs-mac
 brew cask install --appdir="/Applications" postgres
 brew cask install --appdir="/Applications" psequel
 brew cask install --appdir="/Applications" tableau-public
+brew cask install --appdir="/Applications" timemachineeditor
 brew cask install --appdir="/Applications" the-unarchiver
 echo
 
@@ -48,13 +49,13 @@ echo
 echo "Installing brew cask packages in the Applications/Internet folder..."
 brew cask install --appdir="/Applications/Internet" firefox
 brew cask install --appdir="/Applications/Internet" forklift
-brew cask install --appdir="/Applications/Internet" mailmate
 brew cask install --appdir="/Applications/Internet" netnewswire
 brew cask install --appdir="/Applications/Internet" qbittorrent
 brew cask install --appdir="/Applications/Internet" postbox
 brew cask install --appdir="/Applications/Internet" skype
 brew cask install --appdir="/Applications/Internet" slack
 brew cask install --appdir="/Applications/Internet" spamsieve
+brew cask install --appdir="/Applications/Internet" thunderbird
 brew cask install --appdir="/Applications/Internet" zoomus
 echo
 
