@@ -55,7 +55,6 @@ echo
 echo "Installing brew cask packages in the Applications/Internet folder..."
 brew cask install --appdir="/Applications/Internet" firefox
 brew cask install --appdir="/Applications/Internet" forklift
-brew cask install --appdir="/Applications/Internet" netnewswire
 brew cask install --appdir="/Applications/Internet" qbittorrent
 brew cask install --appdir="/Applications/Internet" postbox
 brew cask install --appdir="/Applications/Internet" skype
@@ -106,7 +105,6 @@ brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" pluralsight
 brew cask install --appdir="/Applications/Programming" postman
 brew cask install --appdir="/Applications/Programming" pycharm-ce-with-anaconda-plugin
-brew cask install --appdir="/Applications/Programming" qgis
 brew cask install --appdir="/Applications/Programming" r
 brew cask install --appdir="/Applications/Programming" rstudio
 brew cask install --appdir="/Applications/Programming" sourcetree
