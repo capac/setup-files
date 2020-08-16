@@ -13,14 +13,20 @@ brew install ghostscript
 brew install git
 brew install gnupg
 brew install htop
+brew install hugo
 brew install imagemagick
+brew install lame
 brew install mkvtoolnix
 brew install nmap
 brew install pandoc
+brew install readline
+brew install ruby
+brew install testdisk
 brew install tmux
 brew install tree
 brew install watch
 brew install wget
+brew install youtube-dl
 echo
 
 echo "Installing brew cask packages in the Applications folder..."
