@@ -11,6 +11,7 @@ brew install fish
 brew install geoip
 brew install ghostscript
 brew install git
+brew install golang
 brew install gnupg
 brew install htop
 brew install hugo
