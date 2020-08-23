@@ -6,6 +6,7 @@ brew cask install miniconda
 brew cask install gfortran
 brew install coreutils
 brew install emacs --with-cocoa
+brew install dashing
 brew install exiftool
 brew install fish
 brew install geoip
