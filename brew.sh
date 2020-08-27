@@ -14,6 +14,7 @@ brew install ghostscript
 brew install git
 brew install golang
 brew install gnupg
+brew install heroku/brew/heroku
 brew install htop
 brew install hugo
 brew install imagemagick
