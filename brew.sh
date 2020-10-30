@@ -35,7 +35,6 @@ echo
 echo "Installing brew cask packages in the Applications folder..."
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" backblaze
-brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" fantastical
 brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" logitech-options
@@ -103,6 +102,7 @@ echo "Installing brew cask packages in the Applications/Programming folder..."
 brew cask install --appdir="/Applications/Programming" atom
 brew cask install --appdir="/Applications/Programming" brackets
 brew cask install --appdir="/Applications/Programming" dash
+brew cask install --appdir="/Applications/Programming" docker
 brew cask install --appdir="/Applications/Programming" iterm2
 brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" pluralsight
