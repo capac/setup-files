@@ -5,18 +5,14 @@ brew cask install basictex
 brew cask install miniconda
 brew cask install gfortran
 brew install coreutils
-brew install emacs --with-cocoa
-brew install dashing
 brew install exiftool
 brew install fish
 brew install geoip
-brew install ghostscript
 brew install git
 brew install golang
 brew install gnupg
 brew install heroku/brew/heroku
 brew install htop
-brew install hugo
 brew install imagemagick
 brew install lame
 brew install mkvtoolnix
@@ -24,7 +20,6 @@ brew install nmap
 brew install pandoc
 brew install readline
 brew install ruby
-brew install testdisk
 brew install tmux
 brew install tree
 brew install watch
