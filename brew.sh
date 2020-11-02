@@ -34,13 +34,10 @@ brew cask install --appdir="/Applications" fantastical
 brew cask install --appdir="/Applications" little-snitch
 brew cask install --appdir="/Applications" logitech-options
 brew cask install --appdir="/Applications" macupdater
-brew cask install --appdir="/Applications" malwarebytes
-brew cask install --appdir="/Applications" microsoft-office-2016
 brew cask install --appdir="/Applications" nextcloud
 brew cask install --appdir="/Applications" ntfs-mac
 brew cask install --appdir="/Applications" postgres
 brew cask install --appdir="/Applications" psequel
-brew cask install --appdir="/Applications" tableau-public
 brew cask install --appdir="/Applications" timemachineeditor
 brew cask install --appdir="/Applications" the-unarchiver
 echo
@@ -90,12 +87,11 @@ brew cask install --appdir="/Applications/Office" devonagent
 brew cask install --appdir="/Applications/Office" devonthink
 brew cask install --appdir="/Applications/Office" omnifocus
 brew cask install --appdir="/Applications/Office" skim
-brew cask install --appdir="/Applications/Office" vmware-fusion
+brew cask install --appdir="/Applications/Office" vmware-fusion11
 echo
 
 echo "Installing brew cask packages in the Applications/Programming folder..."
 brew cask install --appdir="/Applications/Programming" atom
-brew cask install --appdir="/Applications/Programming" brackets
 brew cask install --appdir="/Applications/Programming" dash
 brew cask install --appdir="/Applications/Programming" docker
 brew cask install --appdir="/Applications/Programming" iterm2
@@ -115,8 +111,6 @@ brew cask install --appdir="/Applications/Security" 1password
 brew cask install --appdir="/Applications/Security" micro-snitch
 brew cask install --appdir="/Applications/Security" tor-browser
 brew cask install --appdir="/Applications/Security" viscosity
-brew cask install --appdir="/Applications/Security" wifi-explorer
-brew cask install --appdir="/Applications/Security" wire
 echo
 
 echo "Installing brew cask packages in the Applications/Sports folder..."
