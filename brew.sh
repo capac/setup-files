@@ -72,6 +72,7 @@ echo
 
 echo "Installing brew cask packages in the Applications/Multimedia..."
 brew cask install --appdir="/Applications/Multimedia/Graphics" acorn
+brew cask install --appdir="/Applications/Multimedia/Graphics" imageoptim
 brew cask install --appdir="/Applications/Multimedia/Graphics" xee
 brew cask install --appdir="/Applications/Multimedia" handbrake
 brew cask install --appdir="/Applications/Multimedia" movist-pro
