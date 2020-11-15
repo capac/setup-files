@@ -22,6 +22,7 @@ brew install readline
 brew install ruby
 brew install tmux
 brew install tree
+brew install ufraw
 brew install watch
 brew install wget
 brew install youtube-dl
