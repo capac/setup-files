@@ -66,6 +66,7 @@ brew cask install --appdir="/Applications/Maintenance" coconutbattery
 brew cask install --appdir="/Applications/Maintenance" cocktail
 brew cask install --appdir="/Applications/Maintenance" daisydisk
 brew cask install --appdir="/Applications/Maintenance" drivedx
+brew cask install --appdir="/Applications/Maintenance" geekbench
 brew cask install --appdir="/Applications/Maintenance" istat-menus
 brew cask install --appdir="/Applications/Maintenance" launchpad-manager
 brew cask install --appdir="/Applications/Maintenance" onyx
