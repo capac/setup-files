@@ -6,6 +6,7 @@ brew cask install miniconda
 brew cask install gfortran
 brew install coreutils
 brew install exiftool
+brew install ffmpeg
 brew install fish
 brew install geoip
 brew install git
