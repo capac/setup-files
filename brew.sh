@@ -3,7 +3,6 @@
 echo "Installing brew packages..."
 brew cask install basictex
 brew cask install miniconda
-brew cask install gfortran
 brew install coreutils
 brew install exiftool
 brew install ffmpeg
@@ -42,6 +41,13 @@ brew cask install --appdir="/Applications" postgres
 brew cask install --appdir="/Applications" psequel
 brew cask install --appdir="/Applications" timemachineeditor
 brew cask install --appdir="/Applications" the-unarchiver
+echo
+
+echo "Installing brew cask packages in the Applications/Computation folder..."
+brew cask install --appdir="/Applications/Computation" gfortran
+brew cask install --appdir="/Applications/Computation" julia
+brew cask install --appdir="/Applications/Computation" r
+brew cask install --appdir="/Applications/Computation" rstudio
 echo
 
 echo "Installing brew cask packages in the Applications/Intel Power Gadget folder..."
@@ -103,8 +109,6 @@ brew cask install --appdir="/Applications/Programming" macvim
 brew cask install --appdir="/Applications/Programming" pluralsight
 brew cask install --appdir="/Applications/Programming" postman
 brew cask install --appdir="/Applications/Programming" pycharm-ce-with-anaconda-plugin
-brew cask install --appdir="/Applications/Programming" r
-brew cask install --appdir="/Applications/Programming" rstudio
 brew cask install --appdir="/Applications/Programming" sourcetree
 brew cask install --appdir="/Applications/Programming" textmate
 brew cask install --appdir="/Applications/Programming" visual-studio-code
