@@ -63,7 +63,6 @@ brew cask install --appdir="/Applications/Internet" skype
 brew cask install --appdir="/Applications/Internet" slack
 brew cask install --appdir="/Applications/Internet" spamsieve
 brew cask install --appdir="/Applications/Internet" thunderbird
-brew cask install --appdir="/Applications/Internet" zoomus
 echo
 
 echo "Installing brew cask packages in the Applications/Maintenance folder..."
@@ -81,6 +80,7 @@ echo
 
 echo "Installing brew cask packages in the Applications/Multimedia..."
 brew cask install --appdir="/Applications/Multimedia/Graphics" acorn
+brew cask install --appdir="/Applications/Multimedia/Graphics" 
 brew cask install --appdir="/Applications/Multimedia/Graphics" imageoptim
 brew cask install --appdir="/Applications/Multimedia/Graphics" xee
 brew cask install --appdir="/Applications/Multimedia" handbrake
