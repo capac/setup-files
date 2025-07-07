@@ -1,23 +1,20 @@
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
     required = true
+	process = git-lfs filter-process
 [user]
-    name = capac
-    email = capac@users.noreply.github.com
+	name = capac
+	email = capac@users.noreply.github.com
 [push]
     default = simple
 [core]
-    editor = mate
-    excludesfile = /Users/angelo/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Programming/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	editor = mate -w
+	excludesfile = /Users/angelo/.gitignore_global
+	autocrlf = input
+	pager = less
 [commit]
-    template = /Users/angelo/.stCommitMsg
+	template = /Users/angelo/.stCommitMsg
 [credential]
     helper = osxkeychain
 [color]
@@ -26,28 +23,95 @@
     interactive = auto
     pager = true
     status = auto
-    ui = True
+    ui = true
 [color "status"]
     added = green
     changed = yellow
     untracked = red
 [alias]
-    br = branch
-    cane = commit --amend --no-edit
-    ci = commit
+    # show all aliases
+    aliases = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	# show all branches
+    branches = branch -a
+    # show conflicted files after a merge
+    conflicted = grep --name-only --full-name '<<<<<<< HEAD'
+    # commit with message
     cm = commit -m
+    # checkout branch
     co = checkout
-    d = diff
-    last = log -1 HEAD
-    la = log --graph --all
+    # display what will be push remotely
+    dsc = diff --stat --cached origin/main
+    # full history graph
+    fh = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%cn>%Creset' --abbrev-commit --graph --all --date=human
+    # full history with relative date
+    fhr = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(green)(%cd) %C(bold blue)<%cn>%Creset' --abbrev-commit --date=relative --graph --all
+    # grep - search for occurrence of term in all git managed files
+    gr = grep -Ii
+    # show info about last commit
+    last = log -1 HEAD --stat --date=iso
+    # show last tag
+    lasttag = describe --tags --abbrev=0
+    # linearalized change history in long format
+    ll = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%cn>%Creset' --decorate --numstat
+    # linearalized change history
+    ls = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%cn>%Creset' --decorate
+    # list ignored files
+    ls-ignored = ls-files --exclude-standard --ignored --others
+    # list log stats of commits with graph
+    lga = log --graph --all --stat
+    # list log of last 10 files
     lo = log --oneline -n 10
-    lp = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
-    ls = log --stat
+    # list last log of a particular file
+    lp = log -1 -p
+    # show diffs of recent changes
+    news = log --word-diff=color -p HEAD@{1}..HEAD@{0}
+    # show the remote origin
+    origin = remote show origin
+    # show all remotes 
+    origins = remote -v
+    # pull with rebase
     pr = pull --rebase
-    rf = reflog
+    # reflog shortcuts
+    rl = reflog
+    rls = reflog --stat
+    # show a release log
+    releasenotes = log --pretty=format:'- %s%n%b' --since='$(git show -s --format=%ad `git rev-list --tags --max-count=1`)'
+    # show root of current git repo
+    root = rev-parse --show-toplevel
+    # reset shortcuts
+    rs = reset --soft
+    rm = reset --mixed
     rh = reset --hard
-    rs = reflog --stat
-    sb = status -sb
+    # show branches sorted by committer date
+    springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+    # short version of status, output looks similar to svn status
+    sb = status --short --branch
+    # show normal git status
     st = status
+    # show verbose git status
     sv = status -v
-    sh = status -s
+    # short history (tags, last 2 commits and related branches)
+    sh = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%cn>%Creset' --date=human --graph --all --simplify-by-decoration --decorate
+    # short history (tags, last 2 commits and related branches)
+    shr = log --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%cn>%Creset' --date=relative --graph --all --simplify-by-decoration --decorate
+    # show current local commit
+    clc = ls-tree --full-tree -r HEAD --name-only
+    # show the last fetched state of the remote branch
+    # remember to run 'git fetch origin' before this command
+    crc = ls-tree -r origin/main --name-only
+    # do diff using a word diff instead of a line diff
+    wd = diff --word-diff
+    # show author full name (e.g. git author capac)
+    whois = !sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\" --author=\"$1\"' -
+[pull]
+	rebase = false
+[http]
+	postBuffer = 209715200
+[init]
+	defaultBranch = main
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Programming/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
