@@ -18,7 +18,7 @@ echo "Installing Homebrew..."
 echo
 
 echo "Creating the Applications subfolders..."
-mkdir -p -m 755 Applications/{Computation, Intel Power Gadget, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security, Sports}
+mkdir -p -m 755 Applications/{Computation, Internet, Maintenance, Multimedia/{Graphics}, Office, Programming, Security}
 echo
 
 # echo "Downloading the latest Miniconda distribution for macOS..."
